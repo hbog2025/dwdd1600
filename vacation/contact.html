@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Hallie Bogdin">
+    <meta name="description" content="Budget Vacation Destinations">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxygen:wght@300;400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxygen:wght@300;400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="destinations.css">
+    <title>The Frugal Adventurer</title>
+</head>
+
+<body>
+    <!-- start the page head -->
+    <header>
+        <span>The Frugal Adventurer</span>
+    </header>
+
+    <!-- start the page navigation -->
+    <nav>
+        <ul>
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Destinations</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li class="active"><a href="contact.html">Contact Us</a></li>
+
+        </ul>
+    </nav>
+
+    <!-- start the page main -->
+    <main>
+        <h1>Request a Package</h1>
+        <form method="get" class="myForm" action="thanks.html">
+
+            <fieldset>
+                <label>First Name*<input type="text" name="fname" required>
+                </label>
+                <label>Last Name*<input type="text" name="lname" required>
+                </label>
+                <label>Cell Number*<input type="tel" name="phone" required placeholder="987-555-1234">
+                </label>
+                <label>Email*<input type="email" name="email" required placeholder="@gmail.com">
+                </label>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Vacation Interests</legend>
+                <label for="destinations">Preferred Destinations</label>
+                <input type="text" id="destinations" name="destinations" placeholder="Enter destinations">
+                <select id="destination" name="destination" required>
+                    <option value="">-- Select One --</option>
+                    <option value="Albania">Albania</option>
+                    <option value="Cambodia">Cambodia</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Guatamala">Guatamala</option>
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="Portugal">Portugal</option>
+                    <option value="Thailand">Thailand</option>
+                    <option value="Vietnam">Vietnam</option>
+
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Travel Packages</legend>
+                <label> <input type="radio" name="method" value="family">Family Package</label>
+                <label> <input type="radio" name="method" value="romantic">Romatic Package</label>
+                <label> <input type="radio" name="method" value="adventurer">Adventurer Package</label>
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Rental Options</legend>
+                <label><input type="checkbox" name="porch" value="chosen"> Sudans</label>
+                <label><input type="checkbox" name="deck" value="chosen"> SUVs</label>
+                <label><input type="checkbox" name="driveway" value="chosen"> Vans</label>
+                <label><input type="checkbox" name="garage" value="chosen"> Trucks</label>
+                <label><input type="checkbox" name="garage" value="chosen"> Specialty Vehicles</label>
+
+                <label>Preferred Days
+                    <select name="time">
+                        <option value="none">Please Select</option>
+                        <option value="morning">Monday to Friday</option>
+                        <option value="noon">Monday to Wednesday</option>
+                        <option value="afternoon">Wednesday to Saturday</option>
+                        <option value="evening">Thursday to Sunday</option>
+
+
+                    </select>
+                </label>
+            </fieldset>
+
+            <label>Comments/Questions
+                <textarea name="comments"></textarea>
+            </label>
+
+            <input type="submit" value="Send Package Request">
+        </form>
+
+    </main>
+
+    <!-- start the page footer -->
+    <footer>
+        <p>&copy;2025 &bull; Hallie Bogdin &bull; The Frugal Adventurer</p>
+    </footer>
+</body>
+
+</html>
